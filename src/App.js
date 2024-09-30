@@ -1,10 +1,14 @@
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import Layout from './components/Layout/Layout';
 import './App.css';
+
 
 function App() {
   return (
-    <div className="App bg-gray-700 h-screen text-white text-6xl">
-     <h1>Hare Krishna</h1>
-    </div>
+   <BrowserRouter>
+     <Layout />
+   </BrowserRouter>
   );
 }
 
