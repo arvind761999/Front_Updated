@@ -159,7 +159,7 @@ const AdminNavbar = () => {
         }
       >
         <Link to="/admin" className="text-2xl font-medium text-blue-500 m-8">
-        <img src="/logo/Lucky2.png" className="h-14 w-14 rounded-md " />
+        <img src="/logo/Lucky2.png" alt="" className="h-14 w-14 rounded-md " />
         </Link>
         <ul className="px-4">
           {user ? (
