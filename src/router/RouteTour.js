@@ -2,10 +2,14 @@ import React, { useContext } from 'react'
 import { Routes, Route, Navigate } from "react-router-dom";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
+import Userlist from "../pages/Userlist";
 import Admin from "../pages/Admin";
 import Home from "../pages/Home";
 import { AuthContext } from "../context/authContext";
 import ResetPassword from "../pages/ResetPassword";
+import {
+  userColumns
+} from "../components/datatable/datatablesource"
 const RouteTour = () => {
   const ProtectedRoute = ({ children }) => {
     const { user } = useContext(AuthContext);
@@ -31,6 +35,15 @@ const RouteTour = () => {
         }
       />
       <Route path="/register" element={<Register />} />
+
+      <Route
+        path="/users"
+        element={
+          <ProtectedRoute>
+            <Userlist columns={userColumns} />
+          </ProtectedRoute>
+        }
+      />
 
     </Routes>
   )

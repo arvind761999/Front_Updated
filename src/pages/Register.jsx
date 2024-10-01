@@ -78,6 +78,7 @@ const Register = () => {
     setLoading2(true);
   
     try {
+      
       const existingUser = await axios.get(`auth/check-email?email=${email}`);
   
       if (existingUser.data.message === "Email already exists") {
@@ -112,7 +113,7 @@ const Register = () => {
         password,
         img: imgUrl,
       });
-  
+      console.log(response);
       // Now automatically sign in the user by saving the token in localStorage/sessionStorage
       const { token, user } = response.data; // Assuming the API returns a token and user info
   
