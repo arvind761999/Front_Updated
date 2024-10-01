@@ -36,7 +36,7 @@ const inside_nav = [
 ];
 
 const Navbar = () => {
-  const { user,loading, error,  logout } = useContext(AuthContext);
+  const { user, logout } = useContext(AuthContext);
 
   const navigate = useNavigate();
 
