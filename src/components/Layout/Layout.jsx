@@ -7,7 +7,7 @@ import { AuthContext } from "../../context/authContext";
 import AdminNavbar from "../navbar/AdminNavbar";
 
 const Layout = () => {
-  const { user } = useContext(AuthContext);
+//   const { user } = useContext(AuthContext);
   const location = useLocation();
 
   // to render the alternative Navbar or the default Navbar

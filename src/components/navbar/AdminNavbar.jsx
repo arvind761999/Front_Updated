@@ -7,35 +7,35 @@ import { useContext } from "react";
 import { AuthContext } from "../../context/authContext";
 // import axios from "axios";
 
-const inside_nav = [
-  {
-    path: "/hotels",
-    display: "Hotels",
-  },
-  {
-    path: "/tours/home",
-    display: "Tour Packages",
-  },
-  {
-    path: "/vehicles",
-    display: "Vehicles",
-  },
-  {
-    path: "/Restaurants",
-    display: "Restaurants",
-  },
-  {
-    path: "/events",
-    display: "Events",
-  },
-  {
-    path: "/train",
-    display: "Trains",
-  },
-];
+// const inside_nav = [
+//   {
+//     path: "/hotels",
+//     display: "Hotels",
+//   },
+//   {
+//     path: "/tours/home",
+//     display: "Tour Packages",
+//   },
+//   {
+//     path: "/vehicles",
+//     display: "Vehicles",
+//   },
+//   {
+//     path: "/Restaurants",
+//     display: "Restaurants",
+//   },
+//   {
+//     path: "/events",
+//     display: "Events",
+//   },
+//   {
+//     path: "/train",
+//     display: "Trains",
+//   },
+// ];
 
 const AdminNavbar = () => {
-  const { user, loading, error, logout } = useContext(AuthContext);
+  const { user, logout } = useContext(AuthContext);
 
   const navigate = useNavigate();
 
