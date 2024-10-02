@@ -17,6 +17,8 @@ import {
   vehicleReservationColumns,
   
 } from "../components/datatable/datatablesource";
+
+
 import Hotellist from "../pages/Hotellist";
 import Tourlist from "../pages/Tourlist";
 import Tourreservations from "../pages/Tourreservations";
@@ -28,6 +30,14 @@ import UpdateuserA from "../pages/UpdateuserA";
 import Profile from "../pages/Profile";
 import Profileupdate from "../pages/Profileupdate";
 import Adduser from "../pages/Adduser";
+
+
+import VehicleHome from "../pages/vehicle/VehicleHome";
+import VehicleBook from "../pages/vehicle/VehicleBook";
+import VehiclePayment from "../pages/vehicle/VehiclePayment";
+import AddVehicle from "../pages/vehicle/AddVehicle";
+import EditVehicle from "../pages/vehicle/EditVehicle";
+import VehicleView from "../pages/vehicle/VehicleView";
 
 
 
@@ -120,6 +130,14 @@ const RouteTour = () => {
       <Route path="/profile" element={<Profile />} />
       <Route path="/updateProfile" element={<Profileupdate />} />
       <Route path="/adduser" element={<Adduser />} />
+     
+
+      <Route path="/vehicles" element={<VehicleHome />} />
+      <Route path="/vehicle/book/:id" element={<VehicleBook />} />
+      <Route path="/vehicle/payment/" element={<VehiclePayment />} />
+      <Route path="/vehicle/add" element={<AddVehicle />} />
+      <Route path="/vehicle/edit/:id" element={<EditVehicle />} />
+      <Route path="/vehicle/view/" element={<VehicleView />} />
 
     </Routes>
   )
