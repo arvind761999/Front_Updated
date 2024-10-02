@@ -15,7 +15,7 @@ const VehicleBook = () => {
   const [data, setData] = useState([]);
   console.log("data to be send" + data)
 
- // const { id } = useParams();
+//  const { id } = useParams();
 
   useEffect(() => {
     axios
@@ -27,7 +27,7 @@ const VehicleBook = () => {
       .catch((err) => {
         console.log(err);
       });
-  }, []);
+  }, [state._id]);
 
   const deleteHandler = () => {
     axios
