@@ -39,7 +39,14 @@ import AddVehicle from "../pages/vehicle/AddVehicle";
 import EditVehicle from "../pages/vehicle/EditVehicle";
 import VehicleView from "../pages/vehicle/VehicleView";
 
+import ToursHome from "../pages/Tour/ToursHome";
+import TourDetails from "../pages/Tour/TourDetails";
+import SearchResults from "../pages/Tour/SearchResults";
+import AddTourPackage from "../pages/Tour/Admin/AddTourPackage";
+import ToursView from "../pages/Tour/Admin/ToursView";
+import UpdateAddedTours from "../pages/Tour/Admin/UpdateAddedTours";
 
+import AllTourCategories from "../components/Tour/AllTourCategories";
 
 const RouteTour = () => {
   const ProtectedRoute = ({ children }) => {
@@ -139,6 +146,23 @@ const RouteTour = () => {
       <Route path="/vehicle/edit/:id" element={<EditVehicle />} />
       <Route path="/vehicle/view/" element={<VehicleView />} />
 
+
+      <Route path="/tours/home" element={<ToursHome />} />
+      <Route path="/tours/:id" element={<TourDetails />} />
+      <Route
+        path="/tours/search/:destination/:duration/:maxsize"
+        element={<SearchResults />}
+      />
+      <Route path="/addtour" element={<AddTourPackage />} />
+      <Route path="/tour/view" element={<ToursView />} />
+      <Route path="/tour/update" element={<UpdateAddedTours />} />
+
+      <Route path="/sunandbeach" element={<AllTourCategories />} />
+      <Route path="/hikingandtrekking" element={<AllTourCategories />} />
+      <Route path="/wildsafari" element={<AllTourCategories />} />
+      <Route path="/special" element={<AllTourCategories />} />
+      <Route path="/cultural" element={<AllTourCategories />} />
+      <Route path="/festival" element={<AllTourCategories />} />  
     </Routes>
   )
 }
