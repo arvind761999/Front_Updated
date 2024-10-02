@@ -8,8 +8,29 @@ import Home from "../pages/Home";
 import { AuthContext } from "../context/authContext";
 import ResetPassword from "../pages/ResetPassword";
 import {
-  userColumns
-} from "../components/datatable/datatablesource"
+  userColumns,
+  hotelColumns,
+  tourColumns,
+  tourReservationColumns,
+  trainColumns,
+  vehicleColumns,
+  vehicleReservationColumns,
+  
+} from "../components/datatable/datatablesource";
+import Hotellist from "../pages/Hotellist";
+import Tourlist from "../pages/Tourlist";
+import Tourreservations from "../pages/Tourreservations";
+import Trainlist from "../pages/Trainlist";
+import Vehiclelist from "../pages/Vehiclelist";
+import Vehiclereservation from "../pages/Vehiclereservation";
+import UserpageA from "../pages/UserpageA";
+import UpdateuserA from "../pages/UpdateuserA";
+import Profile from "../pages/Profile";
+import Profileupdate from "../pages/Profileupdate";
+import Adduser from "../pages/Adduser";
+
+
+
 const RouteTour = () => {
   const ProtectedRoute = ({ children }) => {
     const { user } = useContext(AuthContext);
@@ -44,6 +65,61 @@ const RouteTour = () => {
           </ProtectedRoute>
         }
       />
+
+<Route
+        path="/hotels"
+        element={
+          <ProtectedRoute>
+            <Hotellist columns={hotelColumns} />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/tours"
+        element={
+          <ProtectedRoute>
+            <Tourlist columns={tourColumns} />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/tourreservation/all"
+        element={
+          <ProtectedRoute>
+            <Tourreservations columns={tourReservationColumns} />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/train"
+        element={
+          <ProtectedRoute>
+            <Trainlist columns={trainColumns} />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/vehicle"
+        element={
+          <ProtectedRoute>
+            <Vehiclelist columns={vehicleColumns} />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/vehiclereservation"
+        element={
+          <ProtectedRoute>
+            <Vehiclereservation columns={vehicleReservationColumns} />
+          </ProtectedRoute>
+        }
+      />
+
+      <Route path="/userpage" element={<UserpageA />} />
+      <Route path="/update" element={<UpdateuserA />} />
+      <Route path="/profile" element={<Profile />} />
+      <Route path="/updateProfile" element={<Profileupdate />} />
+      <Route path="/adduser" element={<Adduser />} />
 
     </Routes>
   )
