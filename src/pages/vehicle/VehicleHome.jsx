@@ -21,7 +21,7 @@ const VehicleHome = () => {
       <VehicleListHeader />
       <div className="md:px-24">
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-        {data?.map((item) => (
+        {Array.isArray(data) && data.length > 0 ? (data.map((item) => (
             <VehicleCard
               brand={item.brand}
               model={item.model}
@@ -33,7 +33,9 @@ const VehicleHome = () => {
               id = {item._id}
             />
             
-          ))}
+          ))) : (
+            <p>No vehicles available</p>
+          )}
         </div>
       </div>
       <RentCarAd />
