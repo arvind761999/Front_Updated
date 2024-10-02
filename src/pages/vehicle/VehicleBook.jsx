@@ -68,7 +68,7 @@ const VehicleBook = () => {
     <div className="lg:p-20">
       <div className="flex justify-center items-center w-full flex-col lg:flex-row pt-12 lg:pt-0">
         <img
-          src={`https://lucky-backend.onrender.com/api/vehicle/images/${data.vehicleMainImg}`}
+          src={`${process.env.REACT_APP_API_URL}/api/vehicle/images/${data.vehicleMainImg}`}
           alt="vehMainImg"
           className="w-[320px] md:w-[700px] lg:w-[600px] rounded-lg"
         />
