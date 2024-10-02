@@ -22,7 +22,7 @@ const ServiceCard = () => {
   return (
     <div className="bg-white ">
       <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-        {allTours.map((tours) => (
+        {Array.isArray(allTours) && allTours.length > 0 ? (allTours.map((tours) => (
           <div
             key={tours._id}
             className="group relative  rounded-t-3xl shadow-2xl rounded-b-xl border-2 "
@@ -69,7 +69,9 @@ const ServiceCard = () => {
               </button>
             </div>
           </div>
-        ))}
+        ))) : (
+            <p>No tours available</p>
+        )}
       </div>
     </div>
   );
