@@ -5,14 +5,21 @@ import axios from "axios";
 import Swal from "sweetalert2";
 
 const UpdateTour = () => {
+
+
   const { state } = useLocation();
   const navigate = useNavigate();
-  console.log(state);
-  const data = state.data.oneTour;
+
+  const data = state?.data?.oneTour;
+
+  if (!data) {
+    console.log("Tour data is not available");
+    navigate("/tours");
+  }
 
   const handleDelete = async () => {
     const confirmResult = await Swal.fire({
-      title: "Are you sure you want to delete this user?",
+      title: "Are you sure you want to delete this tour?",
       text: "This action cannot be undone",
       icon: "warning",
       showCancelButton: true,
@@ -23,9 +30,13 @@ const UpdateTour = () => {
 
     if (confirmResult.isConfirmed) {
       try {
-        await axios.delete(`/tours/${state.data.oneTour._id}`);
-        Swal.fire("Tour Deleted!", "", "success");
-        navigate("/tours");
+        if (data) {
+          await axios.delete(`/tours/${data._id}`);
+          Swal.fire("Tour Deleted!", "", "success");
+          navigate("/tours");
+        } else {
+          Swal.fire("Tour data is missing", "", "error");
+        }
       } catch (err) {
         console.log(err);
         Swal.fire(err.message, "", "error");
@@ -34,9 +45,48 @@ const UpdateTour = () => {
   };
 
   const getTour = async () => {
-    navigate("/tour/update", { state: state });
+    if (state) {
+      navigate("/tour/update", { state: state });
+    } else {
+      Swal.fire("Tour data is missing", "", "error");
+    }
   };
 
+
+  // const { state } = useLocation();
+  // const navigate = useNavigate();
+  // console.log(state);
+  // const data = state.data.oneTour;
+
+  // const handleDelete = async () => {
+  //   const confirmResult = await Swal.fire({
+  //     title: "Are you sure you want to delete this user?",
+  //     text: "This action cannot be undone",
+  //     icon: "warning",
+  //     showCancelButton: true,
+  //     confirmButtonText: "Yes, delete it",
+  //     cancelButtonText: "No, cancel",
+  //     reverseButtons: true,
+  //   });
+
+  //   if (confirmResult.isConfirmed) {
+  //     try {
+  //       await axios.delete(`/tours/${state.data.oneTour._id}`);
+  //       Swal.fire("Tour Deleted!", "", "success");
+  //       navigate("/tours");
+  //     } catch (err) {
+  //       console.log(err);
+  //       Swal.fire(err.message, "", "error");
+  //     }
+  //   }
+  // };
+
+  // const getTour = async () => {
+  //   navigate("/tour/update", { state: state });
+  // };
+
+
+  
   return (
     <>
       <div className="grid lg:grid-cols-2 gap-8 md:px-24 p-4 sm:py-8 ">

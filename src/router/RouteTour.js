@@ -15,7 +15,7 @@ import {
   trainColumns,
   vehicleColumns,
   vehicleReservationColumns,
-  
+
 } from "../components/datatable/datatablesource";
 
 
@@ -47,6 +47,18 @@ import ToursView from "../pages/Tour/Admin/ToursView";
 import UpdateAddedTours from "../pages/Tour/Admin/UpdateAddedTours";
 
 import AllTourCategories from "../components/Tour/AllTourCategories";
+
+
+import ContactUs from "../pages/ContactUs";
+import ActivityForm from "../pages/special_activity/ActivityForm";
+import PendingActivities from "../pages/special_activity/PendingActivities";
+import PendingReservationsPage from "../pages/special_activity/PendingReservations";
+import FilterActivities from "../pages/special_activity/FilterActivities";
+import Activity from "../pages/special_activity/Activity";
+import MyActivities from "../pages/special_activity/MyActivities";
+import ReservationPage from "../pages/special_activity/Reservations";
+
+
 
 const RouteTour = () => {
   const ProtectedRoute = ({ children }) => {
@@ -83,7 +95,7 @@ const RouteTour = () => {
         }
       />
 
-<Route
+      <Route
         path="/hotels"
         element={
           <ProtectedRoute>
@@ -137,7 +149,7 @@ const RouteTour = () => {
       <Route path="/profile" element={<Profile />} />
       <Route path="/updateProfile" element={<Profileupdate />} />
       <Route path="/adduser" element={<Adduser />} />
-     
+
 
       <Route path="/vehicles" element={<VehicleHome />} />
       <Route path="/vehicle/book/:id" element={<VehicleBook />} />
@@ -162,7 +174,23 @@ const RouteTour = () => {
       <Route path="/wildsafari" element={<AllTourCategories />} />
       <Route path="/special" element={<AllTourCategories />} />
       <Route path="/cultural" element={<AllTourCategories />} />
-      <Route path="/festival" element={<AllTourCategories />} />  
+      <Route path="/festival" element={<AllTourCategories />} />
+
+      <Route path="/contactus" element={<ContactUs />} />
+
+      <Route path="/add-new-activity" element={<ActivityForm />} />
+      <Route path="/add-new-activity/:id" element={<ActivityForm />} />
+      <Route path="/pending-activities" element={<PendingActivities />} />
+      <Route
+        path="/pending-reservations"
+        element={<PendingReservationsPage />}
+      />
+      <Route path="/events" element={<FilterActivities />} />
+      <Route path="/activities/:id" element={<Activity />} />
+      <Route path="/my-activities" element={<MyActivities />} />
+      <Route path="/my-reservations" element={<ReservationPage />} />
+
+
     </Routes>
   )
 }
