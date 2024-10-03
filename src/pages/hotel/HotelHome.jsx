@@ -18,7 +18,8 @@ export const HotelHome = () => {
     <div>
       <HotelHero />
       <HotelSearchBar />
-      {data?.map((item) => (
+      {Array.isArray(data) && data.length > 0 ? (
+      data?.map((item) => (
         <SearchCard
         name={item.name}
         city={item.city}
@@ -29,7 +30,10 @@ export const HotelHome = () => {
         />
       
         
-      ))}
+      ))): (
+        <p>No data Availibale</p>
+      )
+      }
       <h1 className="ml-10 mt-5  md:text-2xl  font-bold   text-[#272727]">
         Hotels guests love
       </h1>

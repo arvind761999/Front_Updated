@@ -12,7 +12,8 @@ const HotelCard = () => {
           "Loading"
         ) : (
           <>
-            {data.map((item) => (
+            {Array.isArray(data) && data.length > 0 ? (
+            data.map((item) => (
               <div
                 className="bg-white rounded-lg shadow-md overflow-hidden"
                 key={item.id}
@@ -39,7 +40,11 @@ const HotelCard = () => {
                   </div>
                 </div>
               </div>
-            ))}
+            ))) :
+            (
+            <p>No dta Available</p>
+        )
+            }
           </>
         )}
       </div>
