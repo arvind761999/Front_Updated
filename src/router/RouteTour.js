@@ -58,6 +58,17 @@ import Activity from "../pages/special_activity/Activity";
 import MyActivities from "../pages/special_activity/MyActivities";
 import ReservationPage from "../pages/special_activity/Reservations";
 
+import TrainBook from "../pages/train/TrainBook";
+import AddNewTrain from "../pages/train/AddNewTrain";
+import TrainHomeAdmmin from "../pages/train/TrainHomeAdmin";
+import SingleTrainView from "../pages/train/SingleTrainView";
+import AddPassengerDetails from "../pages/train/AddPassengerDetails";
+import DoUpdateTrain from "../pages/train/DoUpdateTrain";
+import TravelerHome from "../pages/train/TravelerHome";
+import ReviewTickets from "../pages/train/ReviewTickets";
+import ReviewPanel from "../pages/train/ReviewPanel";
+import MyTickets from "../pages/train/MyTickets";
+import MyOneTicket from "../pages/train/MyOneTicket";
 
 
 const RouteTour = () => {
@@ -190,6 +201,19 @@ const RouteTour = () => {
       <Route path="/my-activities" element={<MyActivities />} />
       <Route path="/my-reservations" element={<ReservationPage />} />
 
+
+      <Route path="/train/book/:id" element={<TrainBook />} />
+      <Route path="/admintrain/add" element={<AddNewTrain />} />
+      <Route path="/adminTrain" element={<TrainHomeAdmmin />} />
+      <Route path="/adminTrain/:id" element={<SingleTrainView />} />
+      <Route path="/passengerDet" element={<AddPassengerDetails />} />
+      <Route path="/train/book/:id" element={<TrainBook />} />
+      <Route path="/train/update/:id" element={<DoUpdateTrain />} />
+      <Route path="/TrainHome" element={<TravelerHome />} />
+      <Route path="/adminTrain/reviewTicket/:id" element={<ReviewTickets />} />
+      <Route path="/adminTrain/reviewPanel" element={<ReviewPanel />} />
+      <Route path="/train/MyTickets" element={<MyTickets />} />
+      <Route path="/train/MyTickets/:id" element={<MyOneTicket />} />
 
     </Routes>
   )
