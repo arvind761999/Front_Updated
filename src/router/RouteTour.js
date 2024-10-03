@@ -69,6 +69,7 @@ import ReviewTickets from "../pages/train/ReviewTickets";
 import ReviewPanel from "../pages/train/ReviewPanel";
 import MyTickets from "../pages/train/MyTickets";
 import MyOneTicket from "../pages/train/MyOneTicket";
+import RestaurentForm from "../pages/Restaturant/RestaurantForm";
 
 
 const RouteTour = () => {
@@ -214,6 +215,18 @@ const RouteTour = () => {
       <Route path="/adminTrain/reviewPanel" element={<ReviewPanel />} />
       <Route path="/train/MyTickets" element={<MyTickets />} />
       <Route path="/train/MyTickets/:id" element={<MyOneTicket />} />
+
+
+      <Route path="/addrestaurant" element={<RestaurentForm />} />
+
+      <Route path="/train/book/:id" element={<TrainBook />} />
+      <Route path="/train/add" element={<AddNewTrain />} />
+      <Route path="/adminTrain" element={<TrainHomeAdmmin />} />
+      <Route path="/adminTrain/:id" element={<SingleTrainView />} />
+      <Route
+        path="/train/book/passengerDet"
+        element={<AddPassengerDetails />}
+      />
 
     </Routes>
   )
