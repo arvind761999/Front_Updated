@@ -39,20 +39,23 @@ const TravelerHome = () => {
             <TrainListheader />
             <div className="md:px-24">
                 <div className="flex flex-wrap flex-col md:flex-row lg:mx-16 gap-[30px]">
-                    {
-                        data?.map((item)=>(
-                            <TrainCard
-                                trainName ={item.trainName}
-                                from = {item.from}
-                                to = {item.to}
-                                arrivalTime={item.arrivalTime}
-                                depatureTime = {item.depatureTime}
-                                noOfSeats = {item.noOfSeats}
-                                id={item._id}
-                                price={item.price}
-                            />
-                        ))
-                    }
+                { Array.isArray(data) && data.length > 0 ? ( // Check if data is an array and not empty
+                data.map((item) => (
+                    <TrainCard
+                        key={item._id} // Add a key prop for list items
+                        trainName={item.trainName}
+                        from={item.from}
+                        to={item.to}
+                        arrivalTime={item.arrivalTime}
+                        departureTime={item.departureTime} // Fix typo here (should be departureTime)
+                        noOfSeats={item.noOfSeats}
+                        id={item._id}
+                        price={item.price}
+                    />
+                ))
+            ) : (
+                <p>No data available</p> // Handle the case when data is not available
+            )}
                     
                 </div>
             </div>
