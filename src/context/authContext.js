@@ -1,6 +1,6 @@
-// import axios from "axios";
+import axios from "axios";
 import React from 'react';
-import { createContext, useReducer } from "react";
+import { createContext, useReducer,useEffect } from "react";
 
 let initialUser;
 try {
@@ -54,21 +54,22 @@ export const AuthContextProvider = ({ children }) => {
 
    
 
-    // useEffect(() => {
-    //     localStorage.setItem("user", JSON.stringify(state.user));
-    // }, [state.user]);
+    useEffect(() => {
+        localStorage.setItem("user", JSON.stringify(state.user));
+    }, [state.user]);
 
-    // const logout = () => {
-    //     localStorage.removeItem("user"); // remove the user from localStorage
-    //     axios.get("/api/logout")
-    //         .then(() => {
-    //             dispatch({ type: "LOGOUT" }); // update the state to clear the user
-    //         })
-    //         .catch((error) => {
-    //             console.error("Logout failed:", error);
-    //             // Optionally, you can dispatch an error action here
-    //         });
-    // };
+    const logout = () => {
+        localStorage.removeItem("user"); // remove the user from localStorage
+        axios.get("/api/logout")
+            .then(() => {
+                dispatch({ type: "LOGOUT" }); // update the state to clear the user
+            })
+            .catch((error) => {
+                console.error("Logout failed:", error);
+                // Optionally, you can dispatch an error action here
+            });
+    };
+    console.log(logout);
 
     
     return (
