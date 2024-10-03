@@ -57,8 +57,8 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="flex justify-around w-full py-4 bg-gray-50 sticky top-0 z-[999]">
-      <img src="/logo/Lucky2.png" alt="" className="h-14 w-14 rounded-md " />
+    <nav className="flex justify-around w-full py-1 bg-gray-50 sticky top-0 z-[999]">
+      <img src="/logo/Lucky3.svg" alt="" className="h-20 w-20 rounded-md " />
       {/* <!-- left header section --> */}
       <div className="items-center hidden space-x-5 md:flex">
         <Link to="/">Home</Link>
@@ -66,7 +66,7 @@ const Navbar = () => {
           <div>
             <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2">
               Reservations
-              <ChevronDownIcon
+              <ChevronDownIcon  
                 className="-mr-1 mt-1 h-5 w-5 text-gray-400"
                 aria-hidden="true"
               />

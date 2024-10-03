@@ -70,7 +70,15 @@ import ReviewPanel from "../pages/train/ReviewPanel";
 import MyTickets from "../pages/train/MyTickets";
 import MyOneTicket from "../pages/train/MyOneTicket";
 import RestaurentForm from "../pages/Restaturant/RestaurantForm";
-
+import { HotelHome } from "../pages/hotel/HotelHome";
+import AddHotel from "../pages/hotel/AddHotel";
+import { AddRoom } from "../pages/hotel/AddRoom";
+import UpdateHotel from "../pages/hotel/UpdateHotel";
+import HotelView from "../components/hotel/HotelView";
+import HotelOverView from "../components/hotel/HotelOverview";
+import HadminView from "../pages/hotel/HadminView";
+import HotelReserve from "../components/hotel/HotelReserve";
+import HotelBook from "../pages/hotel/HotelBook";
 
 const RouteTour = () => {
   const ProtectedRoute = ({ children }) => {
@@ -227,6 +235,16 @@ const RouteTour = () => {
         path="/train/book/passengerDet"
         element={<AddPassengerDetails />}
       />
+
+<Route path="/hotelhome" element={<HotelHome />} />
+      <Route path="/hotels/new" element={<AddHotel />} />
+      <Route path="/rooms/new/:id" element={<AddRoom />} />
+      <Route path="/hotels/update/:id" element={<UpdateHotel />} />
+      <Route path="/hotel/:id" element={<HotelView />} />
+      <Route path="/hoteloverview/:id" element={<HotelOverView />} />
+      <Route path="/hoteladmin" element={<HadminView />} />
+      <Route path="/hotelreserve/:id" element={<HotelReserve />} />
+      <Route path="/hotelbooking" element={<HotelBook />} />
 
     </Routes>
   )
