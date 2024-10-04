@@ -191,7 +191,7 @@ const filteredData = newdata.some((employee) => employee.Eid === Eid && employee
               id="fName"
               placeholder=""
               onChange={(e) => setName(e.target.value)}
-              class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+              class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-red-500 focus:shadow-md"
             />
           </div>
         </div>
@@ -210,7 +210,7 @@ const filteredData = newdata.some((employee) => employee.Eid === Eid && employee
               id="EID"
               placeholder=""
               onChange={(e) => setEid(e.target.value)}
-              class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+              class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-red-500 focus:shadow-md"
             />
           </div>
         </div>
@@ -230,7 +230,7 @@ const filteredData = newdata.some((employee) => employee.Eid === Eid && employee
               id=  "Nic"
               placeholder=""
               onChange={(e) => setNic(e.target.value)}
-              class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+              class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-red-500 focus:shadow-md"
             />
   
 </div>
@@ -247,7 +247,7 @@ const filteredData = newdata.some((employee) => employee.Eid === Eid && employee
     id="designation"
     name="Designation"
     onChange={(e) => setJobPosition(e.target.value)}
-    className="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+    className="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-red-500 focus:shadow-md"
   >
     
     <option value="Admin">Admin</option>
@@ -270,7 +270,7 @@ const filteredData = newdata.some((employee) => employee.Eid === Eid && employee
               id="basicSalary"
               placeholder="$"
               onChange={(e) => setBasicSalary(e.target.value)}
-              class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+              class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-red-500 focus:shadow-md"
             />
   
 </div>
@@ -292,7 +292,7 @@ const filteredData = newdata.some((employee) => employee.Eid === Eid && employee
               name="Date"
               id="date"
               onChange={(e) => setNumberaofdates(e.target.value)}
-              class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+              class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-red-500 focus:shadow-md"
             />
           </div>
         </div>
@@ -311,7 +311,7 @@ const filteredData = newdata.some((employee) => employee.Eid === Eid && employee
               name="oTh"
               id="OtH"
               onChange={(e) => setOtHours(e.target.value)}
-              class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+              class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-red-500 focus:shadow-md"
             />
           </div>
         </div>
