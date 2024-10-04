@@ -9,10 +9,10 @@ const RentCarAd = () => {
         </div>
         <div className='lg:pl-12'>
             <h1 className='text-3xl lg:text-4xl font-bold '>Do you want to</h1>
-            <h1 className='text-4xl lg:text-5xl font-bold text-[#41A4FF] py-3'>Rent your Car?</h1>
-            <h1 className='text-4xl font-extrabold text-[#41A4FF]'>078 80 95 559</h1>
+            <h1 className='text-4xl lg:text-5xl font-bold text-red-500 py-3'>Rent your Car?</h1>
+            <h1 className='text-4xl font-extrabold text-red-500'>078 80 95 559</h1>
             {/* <form> 
-                <button className='bg-[#41A4FF] text-white px-8 font-bold rounded-lg p-2 mt-6 shadow-lg'>Register</button>
+                <button className='bg-red-500 text-white px-8 font-bold rounded-lg p-2 mt-6 shadow-lg'>Register</button>
             </form> */}
             
         </div>

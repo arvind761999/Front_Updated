@@ -44,7 +44,7 @@ const Userlist = ({ columns }) => {
     const date = Date().split(" ");
     const dateStr = date[1] + "-" + date[2] + "-" + date[3];
 
-    doc.setFontSize(20).setTextColor(65, 164, 255); // set font size and blue color
+    doc.setFontSize(20).setTextColor(65, 164, 255); // set font size and red color
     doc.setFont("helvetica", "bold");
     doc.text("Traverly", 14, 15); // add heading
     doc.setFont("helvetica", "normal");
@@ -71,7 +71,7 @@ const Userlist = ({ columns }) => {
         <div className="grid md:grid-cols-2 gap-1">
           <Link
             to="/adduser"
-            className="bg-blue-500 flex justify-center items-center hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer lg:mt-0 mt-3"
+            className="bg-red-500 flex justify-center items-center hover:bg-red-700 text-white font-bold py-2 px-4 rounded cursor-pointer lg:mt-0 mt-3"
           >
             Add User
           </Link>

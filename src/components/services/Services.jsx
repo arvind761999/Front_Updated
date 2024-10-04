@@ -8,27 +8,27 @@ import { BsCalendarEvent } from "react-icons/bs";
 const categories = [
   {
     name: "Hotel Reservation",
-    icon: <FaHotel />,
+    icon: <FaHotel className="text-red-500"/>,
   },
   {
     name: "Tour Package Reservation",
-    icon: <MdTour />,
+    icon: <MdTour className="text-red-500"/>,
   },
   {
     name: "Vehicle Reservation",
-    icon: <AiFillCar />,
+    icon: <AiFillCar className="text-red-500"/>,
   },
   {
     name: "Train Reservation",
-    icon: <FaTrain />,
+    icon: <FaTrain className="text-red-500"/>,
   },
   {
     name: "Restaurent Reservation",
-    icon: <BiRestaurant />,
+    icon: <BiRestaurant className="text-red-500"/>,
   },
   {
     name: "Event Reservation",
-    icon: <BsCalendarEvent />,
+    icon: <BsCalendarEvent className="text-red-500"/>,
   },
 ];
 const Services = () => {

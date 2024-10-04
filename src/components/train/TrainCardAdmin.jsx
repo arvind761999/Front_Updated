@@ -36,7 +36,7 @@ const TrainCardAdmin = (props)=>{
             <h1 className='text-2xl font-bold py-3'>{props.price}</h1>
         </div>
         <Link to ={`/adminTrain/${props.id}`} className='w-full'>
-            <button className='bg-[#41A4FF] text-white rounded-md font-bold py-3 w-full'>Open</button>
+            <button className='bg-red-500 text-white rounded-md font-bold py-3 w-full'>Open</button>
         </Link>
     </div>
     )

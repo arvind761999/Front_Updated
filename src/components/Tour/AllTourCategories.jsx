@@ -117,7 +117,7 @@ const Beach = () => {
                       </p>
                       <button
                         type="button"
-                        className="mb-2 inline-block rounded bg-primary px-4 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600"
+                        className="mb-2 inline-block rounded bg-red-500 px-4 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600"
                         onClick={() => console.log(tours._id)}
                       >
                         <Link to={`/tours/${tours._id}`}>View Details</Link>

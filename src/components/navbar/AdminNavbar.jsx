@@ -57,9 +57,9 @@ const AdminNavbar = () => {
 
   return (
     <nav className="flex justify-between lg:px-32 md:px-22 px-12 w-full py-4 bg-gray-50 sticky top-0 z-[999]">
-      <div className="flex items-center">
-        <Link to="/admin" className="text-2xl font-bold text-[#41A4FF]">
-          TravelyAdmin
+     <div className="flex items-center">
+        <Link to="/admin" className="text-2xl font-bold text-red-500">
+          LuckyAdmin
         </Link>
       </div>
 
@@ -87,7 +87,7 @@ const AdminNavbar = () => {
               >
                 <Menu.Items className="absolute right-0 z-10 mt-2 w-40 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                   <div className="py-1">
-                    <h2 className="block px-4 py-2 text-sm text-[#41A4FF]">
+                    <h2 className="block px-4 py-2 text-sm text-red-500">
                       {user.name}
                     </h2>
                     <Menu.Item>
@@ -131,7 +131,7 @@ const AdminNavbar = () => {
           <>
             <Link
               to="/login"
-              className="px-4 py-2 text-white bg-[#41A4FF] rounded-md"
+              className="px-4 py-2 text-white bg-red-500 rounded-md"
             >
               Sign in
             </Link>
@@ -175,7 +175,7 @@ const AdminNavbar = () => {
                       alt=""
                     ></img>
                   </Menu.Button>
-                  <h2 className="block py-2 text-sm text-[#41A4FF]">
+                  <h2 className="block py-2 text-sm text-red-500">
                     {user.name}
                   </h2>
                 </div>
@@ -233,7 +233,7 @@ const AdminNavbar = () => {
               <li className="p-4 mt-8">
                 <Link
                   to="/login"
-                  className="px-3 py-2 text-sm text-blue-100 bg-[#41A4FF] rounded-md"
+                  className="px-3 py-2 text-sm text-blue-100 bg-red-500 rounded-md"
                 >
                   Sign in
                 </Link>

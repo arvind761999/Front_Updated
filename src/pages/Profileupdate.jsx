@@ -117,22 +117,22 @@ const Profileupdate = () => {
       <div className="grid lg:grid-cols-2 gap-8 md:px-24 p-4 sm:py-8 ">
         <div className="flex flex-col justify-center items-center md:py-28 py-10 gap-5 rounded-lg bg-white p-6 md:m-20 m-5 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
           <div className="text-center mx-6 pb-4">
-            <h1 className="text-3xl font-bold text-blue-500">Update Details</h1>
+            <h1 className="text-3xl font-bold text-red-500">Update Details</h1>
           </div>
           <div>
             <img
-              className="w-48 h-48 rounded-full shadow-lg border-4 border-blue-500 object-cover"
+              className="w-48 h-48 rounded-full shadow-lg border-4 border-red-500 object-cover"
               src={file ? URL.createObjectURL(file) : `${state.img}`}
               alt=""
             />
           </div>
           <div className="text-center mx-6 pt-3">
             <h1 className="text-lg">Available Points</h1>
-            <h3 className="text-blue-500 font-bold">1500</h3>
+            <h3 className="text-red-500 font-bold">1500</h3>
           </div>
           <div className="text-center">
             <h1 className="text-lg">Account Status</h1>
-            <h3 className="text-blue-500 font-bold">Blue</h3>
+            <h3 className="text-red-500 font-bold">red</h3>
           </div>
         </div>
         <div className="flex flex-col justify-center items-center gap-5 rounded-lg bg-white p-6 ">
@@ -228,7 +228,7 @@ const Profileupdate = () => {
             {loading2 && <Spinner />}
             <div>
               <button
-                className="bg-blue-500 p-3 w-96 rounded-xl text-white font-bold"
+                className="bg-red-500 p-3 w-96 rounded-xl text-white font-bold"
                 type="submit"
               >
                 Update Profile
@@ -238,7 +238,7 @@ const Profileupdate = () => {
           <div>
             <button
               onClick={handleDelete}
-              className="bg-red-500 w-96 p-3 rounded-xl text-white font-bold mb-8"
+              className="bg-blue-500 w-96 p-3 rounded-xl text-white font-bold mb-8"
             >
               Delete Profile
             </button>

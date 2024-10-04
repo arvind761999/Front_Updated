@@ -87,7 +87,7 @@ useEffect(() => {
           </div> */}
 
           <div className='lg:w-24  items-center w-full hidden'>
-            <button type='submit' className='font-bold  text-white bg-[#41A4FF]  rounded-md p-3 text-center mt-4 w-full' >
+            <button type='submit' className='font-bold  text-white bg-red-500  rounded-md p-3 text-center mt-4 w-full' >
             Search
             </button>
     

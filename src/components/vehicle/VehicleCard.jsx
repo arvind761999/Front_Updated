@@ -29,7 +29,7 @@ const VehicleCard = (props) => {
         <h1 className=''>/per day</h1>
         </div>
         <Link to ={`/vehicle/book/${props.id}`} className='w-full'>
-        <button className='bg-[#41A4FF] text-white rounded-md font-medium py-3 w-full'  >Reserve Now</button>
+        <button className='bg-red-500 text-white rounded-md font-medium py-3 w-full'  >Reserve Now</button>
         </Link>
     </div>
 

@@ -10,7 +10,7 @@ const Footer = () =>  {
   return (
     <div className="w-full bg-black py-16 px-10 grid md:grid-cols-2 gap-8 text-gray-300 bottom-0">
     <div className="">
-    <img src="/logo/Lucky2.png" alt="" className="h-14 w-14 relative ml-24 rounded-md " />
+    <img src="/logo/Lucky3.svg" alt="" className="h-20 w-20 relative ml-16 rounded-md " />
       <p className="py-4">
       Ujjain also boasts a rich cultural heritage, with ancient astronomical sites like the Vedh Shala, constructed by Raja Jai Singh for celestial observations.
       </p>

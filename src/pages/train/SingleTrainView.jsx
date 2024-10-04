@@ -104,7 +104,7 @@ const SingleTrainView = () => {
                             <h1 className="text-2xl font-bold text-gray-800">{singleTrain.price}</h1>
                         </div>
                         <Link to={`/train/update/${singleTrain._id}`}>
-                            <button className="bg-[#41A4FF] m-8 text-white rounded-md font-bold p-3 ">
+                            <button className="bg-[#41A4FF] m-8 px-4 py-2 text-white rounded-md font-bold p-3 ">
                                 Edit
                             </button>
                         </Link>

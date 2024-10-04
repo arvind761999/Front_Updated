@@ -129,11 +129,11 @@ const Adduser = () => {
       <div className="grid lg:grid-cols-2 gap-8 md:px-24 p-4 sm:py-8">
         <div className="flex flex-col justify-center items-center md:py-36 py-10 gap-5 rounded-lg md:m-20 m-5 bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
           <div className="text-center mx-6 pt-3 pb-3">
-            <h1 className="text-4xl font-bold text-blue-500">Add User</h1>
+            <h1 className="text-4xl font-bold text-red-500">Add User</h1>
           </div>
           <div>
             <img
-              className="w-44 h-44 rounded-full shadow-lg border-4 border-blue-500 object-cover"
+              className="w-44 h-44 rounded-full shadow-lg border-4 border-red-500 object-cover"
               src={
                 file
                   ? URL.createObjectURL(file)
@@ -144,11 +144,11 @@ const Adduser = () => {
           </div>
           <div className="text-center mx-6 pt-3">
             <h1 className="text-xl font-semibold">Available Points</h1>
-            <h3 className="text-blue-500">1500</h3>
+            <h3 className="text-red-500">1500</h3>
           </div>
           <div className="text-center">
             <h1 className="text-xl font-semibold">Account Status</h1>
-            <h3 className="text-blue-500">Blue</h3>
+            <h3 className="text-red-500">red</h3>
           </div>
         </div>
         <div className="grid rounded-lg items-center bg-white p-6">
@@ -159,7 +159,7 @@ const Adduser = () => {
               id="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="w-full md:mt-6 px-4 py-2 rounded-lg placeholder-gray-400 text-gray-600 bg-white border border-gray-300 outline-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full md:mt-6 px-4 py-2 rounded-lg placeholder-gray-400 text-gray-600 bg-white border border-gray-300 outline-none focus:outline-none focus:ring-2 focus:ring-red-500"
             />
             <input
               type="text"
@@ -167,7 +167,7 @@ const Adduser = () => {
               id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-4 py-2 rounded-lg placeholder-gray-400 text-gray-600 bg-white border border-gray-300 outline-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 rounded-lg placeholder-gray-400 text-gray-600 bg-white border border-gray-300 outline-none focus:outline-none focus:ring-2 focus:ring-red-500"
             />
             <input
               type="text"
@@ -175,7 +175,7 @@ const Adduser = () => {
               id="country"
               value={country}
               onChange={(e) => setCountry(e.target.value)}
-              className="w-full px-4 py-2 rounded-lg placeholder-gray-400 text-gray-600 bg-white border border-gray-300 outline-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 rounded-lg placeholder-gray-400 text-gray-600 bg-white border border-gray-300 outline-none focus:outline-none focus:ring-2 focus:ring-red-500"
             />
             <input
               type="text"
@@ -183,13 +183,13 @@ const Adduser = () => {
               id="mobile"
               value={mobile}
               onChange={(e) => setMobile(e.target.value)}
-              className="w-full px-4 py-2 rounded-lg placeholder-gray-400 text-gray-600 bg-white border border-gray-300 outline-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 rounded-lg placeholder-gray-400 text-gray-600 bg-white border border-gray-300 outline-none focus:outline-none focus:ring-2 focus:ring-red-500"
             />
             <select
               id="isActive"
               value={isAdmin}
               onChange={(e) => setIsAdmin(e.target.value)}
-              className="w-full px-4 py-2 rounded-lg placeholder-gray-400 text-gray-600 bg-white border border-gray-300 outline-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 rounded-lg placeholder-gray-400 text-gray-600 bg-white border border-gray-300 outline-none focus:outline-none focus:ring-2 focus:ring-red-500"
             >
               <option value="false">False</option>
               <option value="true">True</option>
@@ -198,7 +198,7 @@ const Adduser = () => {
               id="type"
               value={type}
               onChange={(e) => setType(e.target.value)}
-              className="w-full px-4 py-2 rounded-lg placeholder-gray-400 text-gray-600 bg-white border border-gray-300 outline-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 rounded-lg placeholder-gray-400 text-gray-600 bg-white border border-gray-300 outline-none focus:outline-none focus:ring-2 focus:ring-red-500"
             >
               <option value="traveler">Traveler</option>
               <option value="hotelOwner">Hotel Owner</option>
@@ -213,7 +213,7 @@ const Adduser = () => {
               id="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-4 py-2 rounded-lg placeholder-gray-400 text-gray-600 bg-white border border-gray-300 outline-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 rounded-lg placeholder-gray-400 text-gray-600 bg-white border border-gray-300 outline-none focus:outline-none focus:ring-2 focus:ring-red-500"
             />
             <input
               type="password"
@@ -221,7 +221,7 @@ const Adduser = () => {
               id="password2"
               value={password2}
               onChange={(e) => setPassword2(e.target.value)}
-              className="w-full px-4 py-2 rounded-lg placeholder-gray-400 text-gray-600 bg-white border border-gray-300 outline-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 rounded-lg placeholder-gray-400 text-gray-600 bg-white border border-gray-300 outline-none focus:outline-none focus:ring-2 focus:ring-red-500"
             />
             <div className="text-center">
               <label htmlFor="file" className="cursor-pointer">
@@ -240,7 +240,7 @@ const Adduser = () => {
             </div>
             {loading2 && <Spinner />}
             <button
-              className="bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-lg font-semibold mb-9"
+              className="bg-red-500 hover:bg-red-600 text-white py-3 rounded-lg font-semibold mb-9"
               type="submit"
             >
               Add User

@@ -143,7 +143,7 @@ const ActivityForm = () => {
         style={{ marginBottom: "20rem" }}
       >
         <p
-          className="block text-blue-500 font-bold mb-6"
+          className="block text-red-500 font-bold mb-6"
           style={{ fontSize: "28px" }}
         >
           Create a new Special Activity!
@@ -311,7 +311,7 @@ const ActivityForm = () => {
           </div>
           {isLoading ? (
             <button
-              className="bg-blue-500 text-white font-bold py-2 px-4 rounded opacity-50 cursor-not-allowed"
+              className="bg-red-500 text-white font-bold py-2 px-4 rounded opacity-50 cursor-not-allowed"
               disabled
             >
               <svg
@@ -338,7 +338,7 @@ const ActivityForm = () => {
             </button>
           ) : (
             <button
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold mb-20 py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              className="bg-red-500 hover:bg-red-700 text-white font-bold mb-20 py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="submit"
             >
               Create Activity

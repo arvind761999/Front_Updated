@@ -67,7 +67,7 @@ const EditVehicle = () => {
             <textarea rows = '4' className='border rounded-lg w-full p-2 mb-6 mt-2' defaultValue={state.description} placeholder='Add your description here' required onChange={(e) => setDescription(e.target.value) }/>
 
             <div className='flex flex-col lg:flex-row items-center justify-between lg:my-6'>
-          <button className="bg-[#41A4FF] text-white rounded-md font-bold p-3 my-5 lg:my-0  w-full">
+          <button className="bg-red-500 text-white rounded-md font-bold p-3 my-5 lg:my-0  w-full">
                 Update Vehicle
               </button>
           <button className="bg-[#636363] text-white rounded-md font-bold p-3 lg:ml-6   w-full mb-12 lg:mb-0" type = 'reset'>

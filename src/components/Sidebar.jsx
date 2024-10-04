@@ -7,7 +7,7 @@ const Sidebar = () => {
   return (
     <div className='bg-[#F4F4F4] h-[100%] px-[25px]'>
         <div className='px-[15px] py-[30px] flex place-items-center justify-center border-b-[1px] border-[#FFFFFF]/[1]'>
-            <h1 className='text-[#41A4FF] text-[40px] leading-[24px] font-extrabold cursor-pointer'>Travely</h1>
+            <h1 className='text-red-500 text-[40px] leading-[24px] font-extrabold cursor-pointer'>Travely</h1>
         </div>
          <div className='flex flex-col px-[15px] py-[30px] place-items-center justify-center '>
            

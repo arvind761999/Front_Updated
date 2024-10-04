@@ -80,7 +80,7 @@ export default function AddNewTrain() {
             <div className="relative mb-3 mt-5" >
               <input
                 type="text"
-                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-[#41A4FF] focus-visible:shadow-none"
+                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-red-500 focus-visible:shadow-none"
                 id="trainName"
                 onChange={(e) => {
                   const regex = /^[a-zA-Z\s]*$/;
@@ -98,7 +98,7 @@ export default function AddNewTrain() {
             <div className="relative mb-3 mt-5">
               <input
                 type="text"
-                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-[#41A4FF] focus-visible:shadow-none"
+                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-red-500 focus-visible:shadow-none"
                 id="from"
                 placeholder="from"
                 onChange={(e) => {
@@ -115,7 +115,7 @@ export default function AddNewTrain() {
             <div className="relative mb-3 mt-5">
               <input
                 type="text"
-                className="bordder-[#E9EDF4] w-full  rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-[#41A4FF] focus-visible:shadow-none"
+                className="bordder-[#E9EDF4] w-full  rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-red-500 focus-visible:shadow-none"
                 id="to"
                 placeholder="To"
                 onChange={(e) => {
@@ -132,7 +132,7 @@ export default function AddNewTrain() {
             <div className="relative mb-3 mt-5">
               <input
                 type="time"
-                className="bordder-[#E9EDF4] w-full  rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-[#41A4FF] focus-visible:shadow-none"
+                className="bordder-[#E9EDF4] w-full  rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-red-500 focus-visible:shadow-none"
                 id="depatureTime"
                 placeholder="Depature Time"
                 onChange={(e) => {
@@ -144,7 +144,7 @@ export default function AddNewTrain() {
             <div className="relative mb-3 mt-5">
               <input
                 type="time"
-                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-[#41A4FF] focus-visible:shadow-none"
+                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-red-500 focus-visible:shadow-none"
                 id="arrivalTime"
                 placeholder="Depature Time"
                 onChange={(e) => {
@@ -156,7 +156,7 @@ export default function AddNewTrain() {
             <div className="relative mb-3 mt-5">
               <input
                 type="date"
-                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-[#41A4FF] focus-visible:shadow-none"
+                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-red-500 focus-visible:shadow-none"
                 id="date"
                 placeholder="Arrival Time"
                 min={new Date().toISOString().split('T')[0]}
@@ -169,7 +169,7 @@ export default function AddNewTrain() {
             <div className="relative mb-3 mt-5">
               <input
                 type="text"
-                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-[#41A4FF] focus-visible:shadow-none"
+                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-red-500 focus-visible:shadow-none"
                 id="price"
                 placeholder="Price"
                 onChange={(e) => {
@@ -181,7 +181,7 @@ export default function AddNewTrain() {
             <div className="relative mb-3 mt-5">
               <input
                 type="text"
-                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-[#41A4FF] focus-visible:shadow-none"
+                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-red-500 focus-visible:shadow-none"
                 id="noOfSeats"
                 placeholder="Number of seats"
                 onChange={(e) => {
@@ -200,7 +200,7 @@ export default function AddNewTrain() {
             <div className="relative mb-3 mt-5">
               <input
                 type="text"
-                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-[#41A4FF] focus-visible:shadow-none"
+                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-red-500 focus-visible:shadow-none"
                 id="description"
                 placeholder="Description"
                 onChange={(e) => {
@@ -212,7 +212,7 @@ export default function AddNewTrain() {
             <div className="relative mb-3 mt-5">
               <input
                 type="text"
-                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-[#41A4FF] focus-visible:shadow-none"
+                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-red-500 focus-visible:shadow-none"
                 id="MaxBagage"
                 placeholder="Max Bagages Weight"
                 onChange={(e) => {
@@ -224,7 +224,7 @@ export default function AddNewTrain() {
             <div className="relative mb-3 mt-5">
               <input
                 type="text"
-                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-[#41A4FF] focus-visible:shadow-none"
+                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-red-500 focus-visible:shadow-none"
                 id="classType"
                 placeholder="Class Type"
                 onChange={(e) => {
@@ -236,7 +236,7 @@ export default function AddNewTrain() {
             <div className="relative mb-3 mt-5">
               <input
                 type="text"
-                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-[#41A4FF] focus-visible:shadow-none"
+                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-red-500 focus-visible:shadow-none"
                 id="cancelCharges"
                 placeholder="Cancel Charges"
                 onChange={(e) => {
@@ -247,7 +247,7 @@ export default function AddNewTrain() {
 
             <button
               type="submit"
-              className="mt-6 inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+              className="mt-6 inline-block rounded bg-red-500 hover:bg-red-700 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-red-500-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-red-500-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-red-500-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
               data-te-ripple-init
               data-te-ripple-color="light"
             >

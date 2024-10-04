@@ -95,9 +95,9 @@ const Login = () => {
                     <button
                       disabled={loading}
                       onClick={handleClick}
-                      className="w-full cursor-pointer rounded-3xl font-bold bg-[#41A4FF] text-center hover:bg-gray-600 py-3 px-5 text-white transition hover:bg-opacity-90"
+                      className="w-full cursor-pointer rounded-3xl font-bold bg-red-500 text-center hover:bg-red-400 py-3 px-5 text-white transition hover:bg-opacity-90"
                     >
-                      Sign In
+                      Log In
                     </button>
                   </div>
                 </form>
@@ -105,7 +105,7 @@ const Login = () => {
 
                 <Link
                   to="/reset-password"
-                  className="mb-2 inline-block text-base text-red-500 font-semibold cursor-pointer hover:text-primary hover:underline"
+                  className="mb-2 inline-block text-base text-blue-400  cursor-pointer hover:text-primary hover:underline"
                 >
                   Forget Password?
                 </Link>

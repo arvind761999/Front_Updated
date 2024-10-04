@@ -244,7 +244,7 @@ const TourDetails = () => {
                 {/* left col */}
                 <div>
                   <p className="text-lg p-2 font-bold ">Starting From</p>
-                  <p className="p-3 ml-10 text-blue-600  text-5xl">
+                  <p className="p-3 ml-10 text-red-500  text-5xl">
                     <span className="font-semibold">₹{allTours.price}</span>
                     <span className="text-sm text-black">/Per Person</span>
                   </p>
@@ -260,7 +260,7 @@ const TourDetails = () => {
               {/* second row */}
               <div className="flex flex-row pl-10 pt-2 pr-2 space-x-3 mb-4">
                 <p className="text-xl font-bold">Cities:</p>
-                <p className="text-xl  mb-0   text-blue-500">
+                <p className="text-xl  mb-0   text-red-500">
                   {allTours.cities}
                 </p>
               </div>
@@ -285,123 +285,107 @@ const TourDetails = () => {
               <p className="text-3xl mb-10 text-center">Booking Details</p>
               <div className="flex justify-center items-center">
                 <div class=" block max-w-md rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
-                  <form>
-                    <div class="grid grid-cols-2 gap-4">
-                      <div class="relative mb-6" data-te-input-wrapper-init>
-                        <input
-                          type="text"
-                          class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-black dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                          id="firstName"
-                          aria-describedby="emailHelp123"
-                          placeholder="First name"
-                          onChange={(e) => {
-                            setFname(e.target.value);
-                          }}
-                        />
-                        <label
-                          for="firstName"
-                          class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
-                        >
-                          First name
-                        </label>
-                      </div>
-                      <div class="relative mb-6" data-te-input-wrapper-init>
-                        <input
-                          type="text"
-                          class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-black dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                          id="lastName"
-                          aria-describedby="emailHelp124"
-                          placeholder="Last name"
-                          onChange={(e) => {
-                            setLname(e.target.value);
-                          }}
-                        />
-                        <label
-                          for="lastName"
-                          class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
-                        >
-                          Last name
-                        </label>
-                      </div>
-                    </div>
-                    {/* date */}
-                    <div
-                      class="relative mb-3"
-                      id="datepicker-disable-past"
-                      data-te-input-wrapper-init
-                    >
-                      <input
-                        type="date"
-                        id="date"
-                        min={new Date().toISOString().split("T")[0]}
-                        class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-black dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                        placeholder="Select a date"
-                        onChange={(e) => {
-                          setDate(e.target.value);
-                        }}
-                      />
-                      <label
-                        for="date"
-                        class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
-                      >
-                        Select a date
-                      </label>
-                    </div>
+                <form>
+  <div class="grid grid-cols-2 gap-4">
+    <div class="relative mb-6" data-te-input-wrapper-init>
+      <label
+        for="firstName"
+        class="block mb-2 text-sm font-medium text-gray-700"
+      >
+        First Name
+      </label>
+      <input
+        type="text"
+        class="peer block w-full rounded-lg border border-gray-300 bg-white p-3 leading-[1.6] outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500 transition-all ease-linear text-gray-900"
+        id="firstName"
+        placeholder="Enter First Name"
+        onChange={(e) => setFname(e.target.value)}
+      />
+    </div>
 
-                    {/* phone number */}
-                    <div class="grid grid-cols-2 gap-4">
-                      <div class="relative mb-6" data-te-input-wrapper-init>
-                        <input
-                          type="tel"
-                          class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-black dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                          id="phone"
-                          placeholder="First name"
-                          onChange={(e) => {
-                            setPhone(e.target.value);
-                          }}
-                        />
-                        <label
-                          for="phone"
-                          class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
-                        >
-                          Phone Number
-                        </label>
-                      </div>
-                      <div class="relative mb-6" data-te-input-wrapper-init>
-                        <input
-                          type="number"
-                          class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-black dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                          id="countGuest"
-                          placeholder="Last name"
-                          onChange={(e) => {
-                            setGuests(e.target.value);
-                          }}
-                        />
-                        <label
-                          for="countGuest"
-                          class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
-                        >
-                          No of Guests
-                        </label>
-                      </div>
-                    </div>
-                    <button
-                      type="submit"
-                      class="inline-block w-full rounded-xl bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
-                      data-te-ripple-init
-                      data-te-ripple-color="light"
-                      onClick = {() => {
-                        if(isSigned){
-                          inputHandler();
-                        }else{
-                          bookHandler();
-                        }
-                      }}
-                    // onClick={bookHandler}
-                    >
-                      Book Now
-                    </button>
-                  </form>
+    <div class="relative mb-6" data-te-input-wrapper-init>
+      <label
+        for="lastName"
+        class="block mb-2 text-sm font-medium text-gray-700"
+      >
+        Last Name
+      </label>
+      <input
+        type="text"
+        class="peer block w-full rounded-lg border border-gray-300 bg-white p-3 leading-[1.6] outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500 transition-all ease-linear text-gray-900"
+        id="lastName"
+        placeholder="Enter Last Name"
+        onChange={(e) => setLname(e.target.value)}
+      />
+    </div>
+  </div>
+
+  <div class="relative mb-6" data-te-input-wrapper-init>
+    <label
+      for="date"
+      class="block mb-2 text-sm font-medium text-gray-700"
+    >
+      Select a Date
+    </label>
+    <input
+      type="date"
+      id="date"
+      min={new Date().toISOString().split("T")[0]}
+      class="block w-full rounded-lg border border-gray-300 bg-white p-3 leading-[1.6] outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500 transition-all ease-linear text-gray-900"
+      placeholder="Select a date"
+      onChange={(e) => setDate(e.target.value)}
+    />
+  </div>
+
+  <div class="grid grid-cols-2 gap-4">
+    <div class="relative mb-6" data-te-input-wrapper-init>
+      <label
+        for="phone"
+        class="block mb-2 text-sm font-medium text-gray-700"
+      >
+        Phone Number
+      </label>
+      <input
+        type="tel"
+        class="block w-full rounded-lg border border-gray-300 bg-white p-3 leading-[1.6] outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500 transition-all ease-linear text-gray-900"
+        id="phone"
+        placeholder="Enter Phone Number"
+        onChange={(e) => setPhone(e.target.value)}
+      />
+    </div>
+
+    <div class="relative mb-6" data-te-input-wrapper-init>
+      <label
+        for="countGuest"
+        class="block mb-2 text-sm font-medium text-gray-700"
+      >
+        No of Guests
+      </label>
+      <input
+        type="number"
+        class="block w-full rounded-lg border border-gray-300 bg-white p-3 leading-[1.6] outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500 transition-all ease-linear text-gray-900"
+        id="countGuest"
+        placeholder="Enter Number of Guests"
+        onChange={(e) => setGuests(e.target.value)}
+      />
+    </div>
+  </div>
+
+  <button
+    type="submit"
+    class="inline-block w-full rounded-lg bg-red-500 px-6 py-3 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(59,113,202,0.3)] transition duration-150 ease-in-out hover:bg-red-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-red-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-red-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+    onClick={() => {
+      if (isSigned) {
+        inputHandler();
+      } else {
+        bookHandler();
+      }
+    }}
+  >
+    Book Now
+  </button>
+</form>
+
                 </div>
               </div>
             </div>

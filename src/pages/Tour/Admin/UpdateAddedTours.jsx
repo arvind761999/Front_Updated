@@ -404,7 +404,7 @@ const AddTourPackage = () => {
         <div className="mt-6 flex items-center justify-end gap-x-6">
           <button
             type="reset"
-            className="text-lg font-semibold leading-6  text-red-700"
+             className="text-lg font-semibold leading-6 px-3 py-2 rounded-md bg-red-500 text-white hover:bg-red-700"
             value={"Reset"}
           >
             Reset to Original

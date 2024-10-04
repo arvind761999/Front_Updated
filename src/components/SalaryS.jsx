@@ -90,8 +90,8 @@ const SalaryS = () => {
      <div className='pt-[25px] px-[25px] bg-[#F8F9FC] mt-3 ' >
         <div className='flex items-center justify-between'>
             <h1 className='text-[#5a5c69] text-[28px] leading-[34px] font-normal cursor-pointer'>Salary Sheet</h1>
-          <div className='flex  items-center bg-[#41A4FF] gap-1 px-2' >
-              <button className='bg-[#41A4FF] rounded-[3px]'>Generate Reports</button>
+          <div className='flex  items-center bg-red-500  gap-1 px-2' >
+              <button className='bg-red-500  rounded-md hover:bg-red-700 '>Generate Reports</button>
                <HiDownload color='white' className='cursor-pointer p-[5]'   onClick={() => {
               generatePDF(data);
             }}

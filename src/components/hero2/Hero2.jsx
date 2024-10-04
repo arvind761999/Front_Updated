@@ -14,7 +14,7 @@ const Hero2 = () => {
             <p className="mt-4">
             Explore Madhya Pradesh effortlessly with FlyOla air taxis for quick, convenient travel. Enjoy safe and comfortable journeys to stunning destinations across the state.
             </p>
-            <button classNameName="bg-black text-white px-2 py-3 rounded-lg hover:bg-white hover:border hover:text-black hover:font-bold mt-4">
+            <button className=" grid grid-items-center bg-gray-800 text-white px-2 py-3 rounded-lg hover:bg-gray-600 hover:border hover:text-white hover:font-bold mt-4">
               Get started
             </button>
           </div>

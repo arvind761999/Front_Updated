@@ -10,7 +10,7 @@ const VehicleHero = () => {
             <h1 className='text-3xl md:text-5xl uppercase font-extrabold text-[#272727]'>
                 Fast and easy way to
             </h1>
-            <h1 className='text-3xl md:text-5xl uppercase font-extrabold text-[#41A4FF] py-4'>
+            <h1 className='text-3xl md:text-5xl uppercase font-extrabold text-red-500 py-4'>
                 Rent a car
             </h1>
             <p className='text-sm md:text-1xl  lg:max-w-[580px] md:max-w-[900px] text-justify'>Experience hassle-free vehicle reservations with our intuitive web app. Whether you're planning a road trip, a business trip, or simply need a reliable ride, our platform offers a vast selection of vehicles to choose from. With easy booking, flexible pickup and return options, and the ability to customize your reservation with add-ons like drivers, our web app ensures a seamless and convenient experience. Say goodbye to tedious reservation processes and enjoy the freedom of reserving your perfect vehicle with just a few clicks. Start your journey with our vehicle reservation web app today.</p>

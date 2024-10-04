@@ -169,7 +169,7 @@ const AddVehicle = () => {
                 Description
               </label>
           <textarea rows = '4' maxLength={299} value={description} className='border rounded-lg w-full p-2  mt-2' placeholder='Add your description here' onChange={(e) => setDescription(e.target.value) } required/>
-          <div className='mb-6 text-[#41A4FF]'>{countWords(description)}/300</div>
+          <div className='mb-6 text-red-500'>{countWords(description)}/300</div>
 
           <label htmlFor="cover-photo" className="block text-sm font-medium leading-6 text-gray-900"> Location </label>
           <input type='text' list='city' className='border rounded-lg w-full p-2 mb-6 mt-2' placeholder='Colombo' onChange={(e) => setLocation(e.target.value) } required/>
@@ -220,7 +220,7 @@ const AddVehicle = () => {
 
 
           <div className='flex flex-col lg:flex-row items-center justify-between lg:my-6'>
-          <button className="bg-[#41A4FF] text-white rounded-md font-bold p-3 my-5 lg:my-0  w-full ">
+          <button className="bg-red-500 text-white rounded-md font-bold p-3 my-5 lg:my-0  w-full ">
                 Add Vehicle
               </button>
           <button className="bg-[#636363] text-white rounded-md font-bold p-3 lg:ml-6   w-full mb-12 lg:mb-0" type = 'reset'>

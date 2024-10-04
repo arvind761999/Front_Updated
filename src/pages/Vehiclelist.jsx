@@ -58,7 +58,7 @@ const Vehiclelist = ({ columns }) => {
         <div className="grid md:grid-cols-2 gap-1">
           <Link
             to="/vehicle/add"
-            className="bg-blue-500 hover:bg-blue-700 text-center text-white font-bold py-2 px-4 rounded cursor-pointer lg:mt-0 mt-3"
+            className="bg-red-500 hover:bg-red-700 text-center text-white font-bold py-2 px-4 rounded cursor-pointer lg:mt-0 mt-3"
           >
             Add Vehicle
           </Link>
@@ -75,7 +75,7 @@ const Vehiclelist = ({ columns }) => {
       <div className="lg:px-32 px-8 flex md:justify-end">
         <Link
           to="/vehiclereservation"
-          className="bg-blue-500 hover:bg-blue-700 text-center text-white font-bold py-2 px-4 rounded cursor-pointer lg:mt-0 mt-3"
+          className="bg-red-500 hover:bg-red-700 text-center text-white font-bold py-2 px-4 rounded cursor-pointer lg:mt-0 mt-3"
         >
           Vehicle Reservations
         </Link>

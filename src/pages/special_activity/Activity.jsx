@@ -90,7 +90,7 @@ const Activity = () => {
           <div className="p-8 pt-5 md:p-24 md:pt-5 lg:p-5">
             <h1 className="text-3xl md:text-3xl  font-bold uppercase  text-[#272727]">
               Find the
-              <span class="text-[#41A4FF]"> Special Activity</span> for your
+              <span class="text-red-500"> Special Activity</span> for your
               next stay today!
             </h1>
           </div>
@@ -144,7 +144,7 @@ const Activity = () => {
 
           <div className="w-full md:w-1/3 p-4">
             <h2 className="text-2xl font-bold mb-2">Reserve</h2>
-            <form onSubmit={handleSubmit}>
+            <form className=" mx-auto" onSubmit={handleSubmit}>
               <div className="mb-4">
                 <label
                   className="block text-gray-700 font-bold mb-2"
@@ -228,7 +228,7 @@ const Activity = () => {
               </div>
 
               <button
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                 type="submit"
               >
                 Reserve

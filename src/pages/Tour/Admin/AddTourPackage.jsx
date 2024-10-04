@@ -105,7 +105,7 @@ const AddTourPackage = () => {
         <div className="space-y-12">
           {/* basic details */}
           <div>
-            <h2 className="text-3xl font-semibold leading-7 text-[#41A4FF] text-center">
+            <h2 className="text-3xl font-semibold leading-7 text-blue-500 text-center">
               Add Tour Package
             </h2>
             <p className="mt-3 text-red-500 text-lg leading-6 text-center">
@@ -390,14 +390,14 @@ const AddTourPackage = () => {
         <div className="mt-6 flex items-center justify-end gap-x-6">
           <button
             type="reset"
-            className="text-lg font-semibold leading-6  text-red-700"
+            className="text-lg font-semibold leading-6 px-3 py-2 rounded-md bg-red-500 text-white hover:bg-red-700"
             value={"Reset"}
           >
             Reset
           </button>
           <button
             type="submit"
-            className="rounded-md bg-black px-3 py-2 text-lg font-semibold text-white shadow-sm hover:bg-[#41A4FF] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="rounded-md bg-black px-3 py-2 text-lg font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             onClick={handleSubmit}
           >
             Submit For Review

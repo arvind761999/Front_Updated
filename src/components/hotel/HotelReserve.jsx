@@ -186,7 +186,7 @@ const HotelReserve = ({setOpen,hotelId,checkInDate,checkOutDate,date_difference}
     </div>
     <button
       onClick={handleClick}
-      class="bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-all duration-200 mt-6"
+      class="bg-red-600 text-white py-2 px-4 rounded-md hover:bg-red-700 transition-all duration-200 mt-6"
       disabled={selectedRooms.length === 0}
     >
       Reserve now

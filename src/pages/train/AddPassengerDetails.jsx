@@ -94,7 +94,7 @@ export default function AddPassengerDetails() {
                         <div className="relative mb-3 mt-5" >
                             <input
                                 type="text"
-                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-[#41A4FF] focus-visible:shadow-none"
+                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-red-500 focus-visible:shadow-none"
                                 id="noOfTickets"
                                 placeholder="Number Of Tickets"
                                 onChange={(e) => { setnoOfTickets(e.target.value) }}
@@ -105,7 +105,7 @@ export default function AddPassengerDetails() {
                         <div className="relative mb-3 mt-5" >
                             <input
                                 type="text"
-                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-[#41A4FF] focus-visible:shadow-none"
+                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-red-500 focus-visible:shadow-none"
                                 id="firstName"
                                 placeholder="First Name"
                                 onChange={(e) => { setfirstName(e.target.value) }}
@@ -115,7 +115,7 @@ export default function AddPassengerDetails() {
                         <div className="relative mb-3 mt-5" >
                             <input
                                 type="text"
-                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-[#41A4FF] focus-visible:shadow-none"
+                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-red-500 focus-visible:shadow-none"
                                 id="LastName"
                                 placeholder="Last Name"
                                 onChange={(e) => { setLastName(e.target.value) }}
@@ -125,7 +125,7 @@ export default function AddPassengerDetails() {
                         <div className="relative mb-3 mt-5" >
                             <input
                                 type="text"
-                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-[#41A4FF] focus-visible:shadow-none"
+                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-red-500 focus-visible:shadow-none"
                                 id="nationality"
                                 placeholder="Nationality"
                                 onChange={(e) => { setnationality(e.target.value) }}
@@ -136,7 +136,7 @@ export default function AddPassengerDetails() {
                         <div className="relative mb-3 mt-5" >
                             <input
                                 type="text"
-                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-[#41A4FF] focus-visible:shadow-none"
+                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-red-500 focus-visible:shadow-none"
                                 id="IdCardNumber"
                                 placeholder="ID card Number"
                                 onChange={(e) => { setIdCardNumber(e.target.value) }}
@@ -146,7 +146,7 @@ export default function AddPassengerDetails() {
                         <div className="relative mb-3 mt-5" >
                             <input
                                 type="text"
-                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-[#41A4FF] focus-visible:shadow-none"
+                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-red-500 focus-visible:shadow-none"
                                 id="phoneNumber"
                                 placeholder="Phone Number"
                                 onChange={(e) => { setphoneNumber(e.target.value) }}
@@ -156,7 +156,7 @@ export default function AddPassengerDetails() {
                         <div className="relative mb-3 mt-5" >
                             <input
                                 type="text"
-                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-[#41A4FF] focus-visible:shadow-none"
+                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-red-500 focus-visible:shadow-none"
                                 id="email"
                                 placeholder="Email"
                                 onChange={(e) => { setemail(e.target.value) }}
@@ -167,7 +167,7 @@ export default function AddPassengerDetails() {
 
                         <button
                             type="submit"
-                            className="mt-6 inline-block   px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal  shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] bg-[#41A4FF] rounded-lg text-white p-2 w-full"
+                            className="mt-6 inline-block   px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal  shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] bg-red-500 rounded-lg text-white p-2 w-full"
                             data-te-ripple-init
                             data-te-ripple-color="light">
                             Submit

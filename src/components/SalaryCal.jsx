@@ -328,7 +328,7 @@ const filteredData = newdata.some((employee) => employee.Eid === Eid && employee
       <div>
         <button
         type='submit'
-          class="hover:shadow-form rounded-md bg-[#41A4FF] py-3 px-8 text-center text-base font-semibold text-white outline-none"
+          class="hover:shadow-form rounded-md bg-red-500 py-3 px-8 text-center text-base font-semibold text-white outline-none"
         >
           Calculate
         </button>

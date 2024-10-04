@@ -23,7 +23,7 @@ const Activity = ({ id, name, description, startTime, endTime, image }) => {
           onClick={() => {
             navigate(`/activities/${id}`);
           }}
-          className='text-lg font-bold mb-2 text-gray-800 hover:text-blue-500 cursor-pointer'
+          className='text-lg font-bold mb-2 text-gray-800 hover:text-red-500 cursor-pointer'
         >
           {name}
         </h2>
@@ -101,7 +101,7 @@ const FilterActivities = () => {
           <div className='p-8 pt-5 md:p-24 md:pt-5 lg:p-5'>
             <h1 className='text-3xl md:text-3xl font-bold uppercase text-[#272727] mb-10'>
               Find the
-              <span className='text-[#41A4FF]'> Special Activity</span>
+              <span className='text-red-500'> Special Activity</span>
               <br />
               for your next stay today!
               <span className='text-2xl block md:text-3xl font-bold uppercase text-[#272727]'>
@@ -110,7 +110,7 @@ const FilterActivities = () => {
             </h1>
             <div className='mb-4'>
               <input
-                className='border rounded-lg px-4 py-2 w-full mb-10 focus:outline-none focus:ring-2 focus:ring-blue-500'
+                className='border rounded-lg px-4 py-2 w-full mb-10 focus:outline-none focus:ring-2 focus:ring-red-500'
                 style={{ width: '700px' }}
                 type='text'
                 placeholder='Search activities'
@@ -143,7 +143,7 @@ const FilterActivities = () => {
           <div className='mb-4'>
             <label className='block font-medium mb-2'>Start Date</label>
             <input
-              className='border rounded-lg px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500'
+              className='border rounded-lg px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-red-500'
               type='date'
               value={startDate}
               onChange={(event) => setStartDate(event.target.value)}
@@ -158,7 +158,7 @@ const FilterActivities = () => {
           <div className='mb-4'>
             <label className='block font-medium mb-2'>End Date</label>
             <input
-              className='border rounded-lg px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500'
+              className='border rounded-lg px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-red-500'
               type='date'
               value={endDate}
               onChange={(event) => setEndDate(event.target.value)}
@@ -175,7 +175,7 @@ const FilterActivities = () => {
           <div className='mb-4'>
             <label className='block font-medium mb-2'>Start Time</label>
             <input
-              className='border rounded-lg px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500'
+              className='border rounded-lg px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-red-500'
               type='time'
               value={startTime}
               onChange={(event) => {
@@ -187,7 +187,7 @@ const FilterActivities = () => {
           <div className='mb-4'>
             <label className='block font-medium mb-2'>End Time</label>
             <input
-              className='border rounded-lg px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500'
+              className='border rounded-lg px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-red-500'
               type='time'
               value={endTime}
               onChange={(event) => {
@@ -216,7 +216,7 @@ const FilterActivities = () => {
           <div className='mb-4'>
             <label className='block font-medium mb-2'>Activity Type</label>
             <select
-              className='border rounded-lg px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500'
+              className='border rounded-lg px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-red-500'
               value={activityType}
               onChange={(event) =>
                 event.target.value === 'ALL'
@@ -230,7 +230,7 @@ const FilterActivities = () => {
             </select>
           </div>
           <button
-            className='bg-blue-500 text-white px-4 py-2 rounded-lg mb-4'
+            className='bg-red-500 text-white px-4 py-2 rounded-lg mb-4'
             onClick={handleSearch}
           >
             Search

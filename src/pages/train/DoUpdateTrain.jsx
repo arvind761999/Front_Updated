@@ -66,7 +66,7 @@ const DoUpdateTrain = () => {
                         <div className="relative mb-3 mt-5" >
                             <input
                                 type="text"
-                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-[#41A4FF] focus-visible:shadow-none"
+                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-red-500 focus-visible:shadow-none"
                                 id="trainName"
                                 name = "trainName"
                                 value={singleTrain.trainName}
@@ -78,7 +78,7 @@ const DoUpdateTrain = () => {
                         <div className="relative mb-3 mt-5">
                             <input
                                 type="text"
-                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-[#41A4FF] focus-visible:shadow-none"
+                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-red-500 focus-visible:shadow-none"
                                 id="from"
                                 name="from"
                                 placeholder="from"
@@ -90,7 +90,7 @@ const DoUpdateTrain = () => {
                         <div className="relative mb-3 mt-5">
                             <input
                                 type="text"
-                                className="bordder-[#E9EDF4] w-full  rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-[#41A4FF] focus-visible:shadow-none"
+                                className="bordder-[#E9EDF4] w-full  rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-red-500 focus-visible:shadow-none"
                                 id="to"
                                 name="to"
                                 placeholder="To"
@@ -102,7 +102,7 @@ const DoUpdateTrain = () => {
                         <div className="relative mb-3 mt-5">
                             <input
                                 type="time"
-                                className="bordder-[#E9EDF4] w-full  rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-[#41A4FF] focus-visible:shadow-none"
+                                className="bordder-[#E9EDF4] w-full  rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-red-500 focus-visible:shadow-none"
                                 id="depatureTime"
                                 name="depatureTime"
                                 value= {singleTrain.depatureTime}
@@ -114,7 +114,7 @@ const DoUpdateTrain = () => {
                         <div className="relative mb-3 mt-5">
                             <input
                                 type="time"
-                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-[#41A4FF] focus-visible:shadow-none"
+                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-red-500 focus-visible:shadow-none"
                                 id="arrivalTime"
                                 name="arrivalTime"
                                 value={singleTrain.arrivalTime}
@@ -126,7 +126,7 @@ const DoUpdateTrain = () => {
                         <div className="relative mb-3 mt-5">
                             <input
                                 type="date"
-                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-[#41A4FF] focus-visible:shadow-none"
+                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-red-500 focus-visible:shadow-none"
                                 id="date"
                                 name="date"
                                 value={singleTrain.data}
@@ -138,7 +138,7 @@ const DoUpdateTrain = () => {
                         <div className="relative mb-3 mt-5">
                             <input
                                 type="text"
-                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-[#41A4FF] focus-visible:shadow-none"
+                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-red-500 focus-visible:shadow-none"
                                 id="price"
                                 name="price"
                                 value={singleTrain.price}
@@ -150,7 +150,7 @@ const DoUpdateTrain = () => {
                         <div className="relative mb-3 mt-5">
                             <input
                                 type="text"
-                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-[#41A4FF] focus-visible:shadow-none"
+                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-red-500 focus-visible:shadow-none"
                                 id="noOfSeats"
                                 name="noOfSeats"
                                 value={singleTrain.noOfSeats}
@@ -162,7 +162,7 @@ const DoUpdateTrain = () => {
                         <div className="relative mb-3 mt-5">
                             <input
                                 type="text"
-                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-[#41A4FF] focus-visible:shadow-none"
+                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-red-500 focus-visible:shadow-none"
                                 id="description"
                                 name="description"
                                 value={singleTrain.description}
@@ -174,7 +174,7 @@ const DoUpdateTrain = () => {
                         <div className="relative mb-3 mt-5">
                             <input
                                 type="text"
-                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-[#41A4FF] focus-visible:shadow-none"
+                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-red-500 focus-visible:shadow-none"
                                 id="MaxBagage"
                                 name="MaxBagage"
                                 placeholder="Max Bagages Weight"
@@ -186,7 +186,7 @@ const DoUpdateTrain = () => {
                         <div className="relative mb-3 mt-5">
                             <input
                                 type="text"
-                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-[#41A4FF] focus-visible:shadow-none"
+                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-red-500 focus-visible:shadow-none"
                                 id="classType"
                                 name="classType"
                                 value={singleTrain.classType}
@@ -198,7 +198,7 @@ const DoUpdateTrain = () => {
                         <div className="relative mb-3 mt-5">
                             <input
                                 type="text"
-                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-[#41A4FF] focus-visible:shadow-none"
+                                className="bordder-[#E9EDF4] w-full rounded-3xl border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-red-500 focus-visible:shadow-none"
                                 id="cancelCharges"
                                 name="cancelCharges"
                                 placeholder="Cancel Charges"
@@ -209,7 +209,7 @@ const DoUpdateTrain = () => {
 
                         <button
                             type="submit"
-                            className="mt-6 inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                            className="mt-6 inline-block rounded bg-red-500 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover   :shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
                             data-te-ripple-init
                             data-te-ripple-color="light"
                             onClick={handleFormSubmit}

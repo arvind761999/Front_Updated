@@ -84,7 +84,7 @@ const location=useLocation();
         onSubmit={sendData}
         encType="multipart/form-data"
       >
-        <h1 className="text-2xl font-bold mb-8 mt-8">Update <span class='text-[#41A4FF]'>Hotel</span> and <span class='text-[#41A4FF]'>Join</span> with us</h1>
+        <h1 className="text-2xl font-bold mb-8 mt-8">Update <span class='text-red-500'>Hotel</span> and <span class='text-red-500'>Join</span> with us</h1>
         <div class="flex flex-wrap -mx-3 mb-3">
           <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
@@ -136,7 +136,7 @@ const location=useLocation();
             <select
               id="hotelType"
               defaultValue={data.type}
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5"
               onChange={(e) =>setHotelType(e.target.value)}
             >
               <option>Hotel</option>
@@ -344,7 +344,7 @@ const location=useLocation();
         </div> */}
 
     
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mb-8">
+        <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full mb-8">
           Update
         </button>
       </form>

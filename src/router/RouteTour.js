@@ -198,6 +198,7 @@ const RouteTour = () => {
       <Route path="/tour/view" element={<ToursView />} />
       <Route path="/tour/update" element={<UpdateAddedTours />} />
 
+
       <Route path="/sunandbeach" element={<AllTourCategories />} />
       <Route path="/hikingandtrekking" element={<AllTourCategories />} />
       <Route path="/wildsafari" element={<AllTourCategories />} />
@@ -218,7 +219,6 @@ const RouteTour = () => {
       <Route path="/activities/:id" element={<Activity />} />
       <Route path="/my-activities" element={<MyActivities />} />
       <Route path="/my-reservations" element={<ReservationPage />} />
-
 
       <Route path="/train/book/:id" element={<TrainBook />} />
       <Route path="/admintrain/add" element={<AddNewTrain />} />
@@ -254,7 +254,6 @@ const RouteTour = () => {
       <Route path="/hoteladmin" element={<HadminView />} />
       <Route path="/hotelreserve/:id" element={<HotelReserve />} />
       <Route path="/hotelbooking" element={<HotelBook />} />
-
       <Route path="/addrestaurants" element={<RestaurentForm />} />
 
 

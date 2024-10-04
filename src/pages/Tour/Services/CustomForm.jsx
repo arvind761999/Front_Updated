@@ -72,11 +72,11 @@ const CustomForm = () => {
     <div className="mx-auto max-w-2xl px-4 pb-16 sm:px-6 lg:max-w-7xl lg:px-8">
       <div className="mt-6 grid grid-cols-1 gap-x-6   lg:grid-cols-2 xl:gap-x-8 ">
         {/* how it works */}
-        <div className="bg-[#41BBFF]">
+        <div className="bg-red-500 text-white">
           {/* upper-1 */}
           <div>
             <h1
-              className="text-center p-3 mt-5 text-5xl "
+              className="text-center p-3 mt-5 text-5xl text-white"
               style={{ fontFamily: "popins" }}
             >
               How it Works{" "}
@@ -112,11 +112,11 @@ const CustomForm = () => {
               </div>
             </div>
             <div>
-              <p className="items-center text-2xl p-3 flex justify-center text-black ">
+              <p className="items-center text-2xl p-3 flex justify-center ">
                 <HiUserGroup />
               </p>
               <div className="text-center p-2 text-xl">
-                <p className="font-extrabold">24/7</p>
+                <p className="font-extrabold ">24/7</p>
                 <p>Availablity</p>
               </div>
             </div>
@@ -136,7 +136,7 @@ const CustomForm = () => {
         {/* Customize form */}
         <div className="shadow-2xl flex justify-center items-center">
           <div>
-            <p className="items-center text-8xl p-3 flex justify-center text-blue-600">
+            <p className="items-center text-8xl p-3 flex justify-center text-red-500">
               <TbMap2 />
             </p>
             <h2

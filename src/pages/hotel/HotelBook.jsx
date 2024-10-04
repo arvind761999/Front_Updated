@@ -46,7 +46,7 @@ const HotelBook = () => {
                                             <p className='ml-auto'>Rs. 40000.00</p>
                                         </div>
                    </div>
-                      <button className='bg-[#41A4FF] rounded-lg text-white p-2 w-full'>Confirm and Pay Now</button>
+                      <button className='bg-red-500 rounded-lg text-white p-2 w-full'>Confirm and Pay Now</button>
                       <div className='flex items-center pt-2'>
                         <FaLock className='text-[#b4b4b4]'/>
                       <h1 className='text-[#b4b4b4]  font-extralight pl-4'>Payments are secured and encrypted.</h1>

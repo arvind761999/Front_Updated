@@ -60,7 +60,7 @@ export const AddRoom = () => {
         id="createRoom"
         encType="multipart/form-data"
       >
-        <h1 className="text-2xl font-bold mb-8 mt-5">Customize Your <span class='text-[#41A4FF]'>Rooms</span></h1>
+        <h1 className="text-2xl font-bold mb-8 mt-5">Customize Your <span class='text-red-500'>Rooms</span></h1>
         <div class="flex flex-wrap -mx-3 mb-3">
           <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
@@ -156,7 +156,7 @@ export const AddRoom = () => {
         </div>
 
        <div className="mb-5">
-          <button class="bg-[#41A4FF] hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full " >
+          <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full " >
           SUBMIT
         </button>
         <input class="bg-[#787878] hover:bg-[#474747] text-white font-bold py-2 px-4 rounded-full ml-5 

@@ -85,7 +85,7 @@ const RestaurantForm = () => {
     <>
       <div className="max-w-3xl mx-auto mt-20">
         <p
-          className="block text-blue-500 font-bold mb-6"
+          className="block text-red-500 font-bold mb-6"
           style={{ fontSize: "28px" }}
         >
           Add Restaurant!
@@ -403,7 +403,7 @@ const RestaurantForm = () => {
             />
           </div>
           <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold mb-20 py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="bg-red-500 hover:bg-red-700 text-white font-bold mb-20 py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="submit"
           >
             Add Restaurant

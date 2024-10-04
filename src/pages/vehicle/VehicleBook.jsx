@@ -86,7 +86,7 @@ const VehicleBook = () => {
               <h1 className="px-4">{data.location}</h1>
             </div>
             <div>
-              <h1 className="text-[#41A4FF]">Free Cancellation</h1>
+              <h1 className="text-red-500">Free Cancellation</h1>
             </div>
           </div>
 
@@ -110,7 +110,7 @@ const VehicleBook = () => {
           </div>
           
           <div className="pt-4 flex">
-            <h1 className="text-[#41A4FF] font-bold">Do you need a Driver?</h1>
+            <h1 className="text-red-500 font-bold">Do you need a Driver?</h1>
               <p className="ml-6">Yes</p>
               <input type="radio" name="driver" className="ml-2" onChange={() => setDriver(true)} required></input>
 
@@ -126,7 +126,7 @@ const VehicleBook = () => {
               <h1 className="md:text-1xl">/per day</h1>
             </div>
             
-              <button className="bg-[#41A4FF] text-white rounded-md lg:ml-8 font-bold p-3 my-5 lg:my-0 w-full md:w-[350px] md:my-0 lg:w-[300px] " type="submit">
+              <button className="bg-red-500 text-white rounded-md lg:ml-8 font-bold p-3 my-5 lg:my-0 w-full md:w-[350px] md:my-0 lg:w-[300px] " type="submit">
                 Reserve
               </button>
             

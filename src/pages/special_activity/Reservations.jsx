@@ -56,7 +56,7 @@ function ReservationPage() {
           <div className="p-8 pt-5 md:p-24 md:pt-5 lg:p-5">
             <h1 className="text-3xl md:text-3xl  font-bold uppercase  text-[#272727]">
               Reserve
-              <span class="text-[#41A4FF]"> more..</span>
+              <span class="text-red-500"> more..</span>
             </h1>
           </div>
         </div>
