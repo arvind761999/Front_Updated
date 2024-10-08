@@ -121,7 +121,7 @@ const MyActivities = () => {
     // Add the logo to the top of the PDF
     doc.setFontSize(24);
     doc.setTextColor("#41A4FF");
-    doc.text("Travely", 10, 20);
+    doc.text("Lucky", 10, 20);
 
     // Add the table to the PDF
     doc.autoTable({

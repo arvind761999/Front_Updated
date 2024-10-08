@@ -4,7 +4,7 @@ import HeroTour from "./HeroTour";
 import TourNav from "../../components/navbar/TourNav";
 import { AiFillStar } from "react-icons/ai";
 import { initTWE, Ripple, Input } from "tw-elements";
-import  Datepicker  from 'react-datepicker';
+import Datepicker from 'react-datepicker';
 import { Stepper } from '@mui/material';
 import DaysShow from "../../components/Tour/DaysShow";
 import InclusionExclusion from "../../components/Tour/InclusionExclusion";
@@ -20,7 +20,7 @@ const TourDetails = () => {
   const [date, setDate] = useState("");
   const [phone, setPhone] = useState(0);
   const [guestCount, setGuests] = useState("");
-  const [isSigned, setSigned] = useState(false);
+  const [isSigned, setSigned] = useState(true);
   const navigate = useNavigate();
 
   const [allTours, setTour] = useState([]);
@@ -41,8 +41,8 @@ const TourDetails = () => {
   // const { user } = useContext(AuthContext);
   // const currentUser = user.email;
   // console.log(currentUser);
-  
-  
+
+
   const inputHandler = async (e) => {
     e.preventDefault();
     if (
@@ -111,9 +111,9 @@ const TourDetails = () => {
         text: err.message,
       });
     }
-     setSigned(false);
-     console.log("Hare Krishna");
-     console.log({isSigned});
+    setSigned(false);
+    console.log("Hare Krishna");
+    console.log({ isSigned });
   };
 
 
@@ -237,7 +237,7 @@ const TourDetails = () => {
           </div>
 
           {/* details -right*/}
-          <div className="shadow-2xl rounded-xl border-dotted border-2 border-sky-500 grid grid-cols-1 px-4">
+          <div className="shadow-2xl rounded-xl border-dotted border-2 border-red-500 grid grid-cols-1 px-4">
             <div>
               {/* first row */}
               <div className="grid grid-cols-2">
@@ -285,106 +285,106 @@ const TourDetails = () => {
               <p className="text-3xl mb-10 text-center">Booking Details</p>
               <div className="flex justify-center items-center">
                 <div class=" block max-w-md rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
-                <form>
-  <div class="grid grid-cols-2 gap-4">
-    <div class="relative mb-6" data-te-input-wrapper-init>
-      <label
-        for="firstName"
-        class="block mb-2 text-sm font-medium text-gray-700"
-      >
-        First Name
-      </label>
-      <input
-        type="text"
-        class="peer block w-full rounded-lg border border-gray-300 bg-white p-3 leading-[1.6] outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500 transition-all ease-linear text-gray-900"
-        id="firstName"
-        placeholder="Enter First Name"
-        onChange={(e) => setFname(e.target.value)}
-      />
-    </div>
+                  <form>
+                    <div class="grid grid-cols-2 gap-4">
+                      <div class="relative mb-6" data-te-input-wrapper-init>
+                        <label
+                          for="firstName"
+                          class="block mb-2 text-sm font-medium text-gray-700"
+                        >
+                          First Name
+                        </label>
+                        <input
+                          type="text"
+                          class="peer block w-full rounded-lg border border-gray-300 bg-white p-3 leading-[1.6] outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500 transition-all ease-linear text-gray-900"
+                          id="firstName"
+                          placeholder="Enter First Name"
+                          onChange={(e) => setFname(e.target.value)}
+                        />
+                      </div>
 
-    <div class="relative mb-6" data-te-input-wrapper-init>
-      <label
-        for="lastName"
-        class="block mb-2 text-sm font-medium text-gray-700"
-      >
-        Last Name
-      </label>
-      <input
-        type="text"
-        class="peer block w-full rounded-lg border border-gray-300 bg-white p-3 leading-[1.6] outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500 transition-all ease-linear text-gray-900"
-        id="lastName"
-        placeholder="Enter Last Name"
-        onChange={(e) => setLname(e.target.value)}
-      />
-    </div>
-  </div>
+                      <div class="relative mb-6" data-te-input-wrapper-init>
+                        <label
+                          for="lastName"
+                          class="block mb-2 text-sm font-medium text-gray-700"
+                        >
+                          Last Name
+                        </label>
+                        <input
+                          type="text"
+                          class="peer block w-full rounded-lg border border-gray-300 bg-white p-3 leading-[1.6] outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500 transition-all ease-linear text-gray-900"
+                          id="lastName"
+                          placeholder="Enter Last Name"
+                          onChange={(e) => setLname(e.target.value)}
+                        />
+                      </div>
+                    </div>
 
-  <div class="relative mb-6" data-te-input-wrapper-init>
-    <label
-      for="date"
-      class="block mb-2 text-sm font-medium text-gray-700"
-    >
-      Select a Date
-    </label>
-    <input
-      type="date"
-      id="date"
-      min={new Date().toISOString().split("T")[0]}
-      class="block w-full rounded-lg border border-gray-300 bg-white p-3 leading-[1.6] outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500 transition-all ease-linear text-gray-900"
-      placeholder="Select a date"
-      onChange={(e) => setDate(e.target.value)}
-    />
-  </div>
+                    <div class="relative mb-6" data-te-input-wrapper-init>
+                      <label
+                        for="date"
+                        class="block mb-2 text-sm font-medium text-gray-700"
+                      >
+                        Select a Date
+                      </label>
+                      <input
+                        type="date"
+                        id="date"
+                        min={new Date().toISOString().split("T")[0]}
+                        class="block w-full rounded-lg border border-gray-300 bg-white p-3 leading-[1.6] outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500 transition-all ease-linear text-gray-900"
+                        placeholder="Select a date"
+                        onChange={(e) => setDate(e.target.value)}
+                      />
+                    </div>
 
-  <div class="grid grid-cols-2 gap-4">
-    <div class="relative mb-6" data-te-input-wrapper-init>
-      <label
-        for="phone"
-        class="block mb-2 text-sm font-medium text-gray-700"
-      >
-        Phone Number
-      </label>
-      <input
-        type="tel"
-        class="block w-full rounded-lg border border-gray-300 bg-white p-3 leading-[1.6] outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500 transition-all ease-linear text-gray-900"
-        id="phone"
-        placeholder="Enter Phone Number"
-        onChange={(e) => setPhone(e.target.value)}
-      />
-    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                      <div class="relative mb-6" data-te-input-wrapper-init>
+                        <label
+                          for="phone"
+                          class="block mb-2 text-sm font-medium text-gray-700"
+                        >
+                          Phone Number
+                        </label>
+                        <input
+                          type="tel"
+                          class="block w-full rounded-lg border border-gray-300 bg-white p-3 leading-[1.6] outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500 transition-all ease-linear text-gray-900"
+                          id="phone"
+                          placeholder="Enter Phone Number"
+                          onChange={(e) => setPhone(e.target.value)}
+                        />
+                      </div>
 
-    <div class="relative mb-6" data-te-input-wrapper-init>
-      <label
-        for="countGuest"
-        class="block mb-2 text-sm font-medium text-gray-700"
-      >
-        No of Guests
-      </label>
-      <input
-        type="number"
-        class="block w-full rounded-lg border border-gray-300 bg-white p-3 leading-[1.6] outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500 transition-all ease-linear text-gray-900"
-        id="countGuest"
-        placeholder="Enter Number of Guests"
-        onChange={(e) => setGuests(e.target.value)}
-      />
-    </div>
-  </div>
+                      <div class="relative mb-6" data-te-input-wrapper-init>
+                        <label
+                          for="countGuest"
+                          class="block mb-2 text-sm font-medium text-gray-700"
+                        >
+                          No of Guests
+                        </label>
+                        <input
+                          type="number"
+                          class="block w-full rounded-lg border border-gray-300 bg-white p-3 leading-[1.6] outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500 transition-all ease-linear text-gray-900"
+                          id="countGuest"
+                          placeholder="Enter Number of Guests"
+                          onChange={(e) => setGuests(e.target.value)}
+                        />
+                      </div>
+                    </div>
 
-  <button
-    type="submit"
-    class="inline-block w-full rounded-lg bg-red-500 px-6 py-3 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(59,113,202,0.3)] transition duration-150 ease-in-out hover:bg-red-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-red-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-red-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
-    onClick={() => {
-      if (isSigned) {
-        inputHandler();
-      } else {
-        bookHandler();
-      }
-    }}
-  >
-    Book Now
-  </button>
-</form>
+                    <button
+                      type="submit"
+                      class="inline-block w-full rounded-lg bg-red-500 px-6 py-3 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(59,113,202,0.3)] transition duration-150 ease-in-out hover:bg-red-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-red-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-red-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+                      onClick={() => {
+                        if (isSigned) {
+                          inputHandler();
+                        } else {
+                          bookHandler();
+                        }
+                      }}
+                    >
+                      Book Now
+                    </button>
+                  </form>
 
                 </div>
               </div>

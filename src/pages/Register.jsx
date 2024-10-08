@@ -122,7 +122,7 @@ const Register = () => {
       localStorage.setItem("user", JSON.stringify(user)); // Optional: save user info
   
       Swal.fire(
-        "Congratulations! You Have Successfully Registered with Travely",
+        "Congratulations! You Have Successfully Registered with Lucky!",
         "",
         "success"
       );

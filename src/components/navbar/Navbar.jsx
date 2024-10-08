@@ -13,14 +13,14 @@ const inside_nav = [
     path: "/hotelhome",
     display: "Hotels",
   },
-  {
-    path: "/tours/home",
-    display: "Tour Packages",
-  },
-  {
-    path: "/vehicles",
-    display: "Vehicles",
-  },
+  // {
+  //   path: "/tours/home",
+  //   display: "Tour Packages",
+  // },
+  // {
+  // path: "/vehicles",
+  //   display: "Vehicles",
+  // },
   {
     path: "/Restaurants",
     display: "Restaurants",
@@ -106,6 +106,8 @@ const Navbar = () => {
           </Transition>
         </Menu>
         <Link to="/contactus">Contact us</Link>
+        <Link to="/tours/home">Tour Packages</Link>
+        <Link to="/vehicles">Car Rent</Link>
       </div>
       {/* <!-- right header section --> */}
       <div className="items-center space-x-3 hidden md:flex">
@@ -202,7 +204,7 @@ const Navbar = () => {
             : "fixed left-[-100%]"
         }
       >
-        <h1 className="text-2xl font-medium text-blue-500 m-8">Travely</h1>
+        <h1 className="text-2xl font-medium text-red-500 m-8">Lucky</h1>
         <ul className="p-4 mt-20">
           <li className="p-4 border-b border-gray-600">
             <Link to="/">Home</Link>
@@ -268,7 +270,7 @@ const Navbar = () => {
                       alt=""
                     ></img>
                   </Menu.Button>
-                  <h2 className="block py-2 text-sm text-[#41A4FF]">
+                  <h2 className="block py-2 text-sm text-red-500">
                     {user.name}
                   </h2>
                 </div>
