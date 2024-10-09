@@ -62,6 +62,8 @@ const Navbar = () => {
       {/* <!-- left header section --> */}
       <div className="items-center hidden space-x-5 md:flex">
         <Link to="/">Home</Link>
+        <Link to="/tours/home">Tours</Link>
+        <Link to="/vehicles">Car Rent</Link>
         <Menu as="div" className="relative inline-block text-left">
           <div>
             <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2">
@@ -106,8 +108,6 @@ const Navbar = () => {
           </Transition>
         </Menu>
         <Link to="/contactus">Contact us</Link>
-        <Link to="/tours/home">Tour Packages</Link>
-        <Link to="/vehicles">Car Rent</Link>
       </div>
       {/* <!-- right header section --> */}
       <div className="items-center space-x-3 hidden md:flex">

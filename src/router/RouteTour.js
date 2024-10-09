@@ -88,6 +88,7 @@ import { FinanceHealth } from "../pages/FinanceHealth";
 import Refund from "../components/Refund";
 import RefundReq from "../components/RefundReq";
 import RefundUpdate from "../components/RefundUpdate";
+import ViewToursBooking from '../pages/Tour/Admin/ViewToursBooking';
 
 const RouteTour = () => {
   const ProtectedRoute = ({ children }) => {
@@ -148,6 +149,15 @@ const RouteTour = () => {
           </ProtectedRoute>
         }
       />
+
+     <Route 
+     path = "/veiwToursBooking" 
+     element = {
+      <ViewToursBooking />
+     }
+
+     />
+
       <Route
         path="/train"
         element={
